@@ -1,0 +1,46 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style-type: none;
+    font-family: sans-serif;
+}
+
+nav {
+    width: 100vw;
+    height: 10vh;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    justify-content: space-between;
+    color: white;
+    align-items: center;
+    font-family: 'Google Sans Code';
+    font-weight: 700;
+    font-size: 12px;
+}
+
+.logo {
+    display: flex;
+    justify-content: start;
+    margin: 2%;
+}
+
+nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    flex-grow: 100%;
+}
+
+ul .menu-choice {
+    flex-grow: 20%;
+    padding: 20px;
+}
+
+.menu-choice a {
+    color: black;
+}
+
+.logo a {
+    color: black;
+}
