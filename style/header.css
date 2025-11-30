@@ -13,7 +13,7 @@ header {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-attachment: fixed;
+    background-attachment: scroll;
     /* Optional: add a semi-transparent overlay for better contrast with text */
 }
 
