@@ -2,16 +2,41 @@ header {
     text-align: center;
     padding: 20px;
     height: 100vh;
-    background-image: src("squering.jpg");
+    /* Use the project image as a background. Path is relative to this CSS file (style/),
+       so use ../img-source/circleing.jpg */
+    background-image: url("../img-source/circleing.jpg");
     background-size: cover;
-    background-position: center;
     background-repeat: no-repeat;
+    background-position: center center;
+    position: relative; /* needed for overlay */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-attachment: fixed;
+    /* Optional: add a semi-transparent overlay for better contrast with text */
 }
 
-
+/* Adjust header content style for better contrast */
 .header-part {
-    margin: 10%;
-    color: black;
+    margin: 20px;
+    color: white;
+    text-shadow: 0 2px 6px rgba(0,0,0,0.6);
+}
+
+/* Semi-transparent overlay so text stays readable on all screens */
+header::before {
+    content: "";
+    position: absolute;
+    inset: 0; /* top:0; right:0; bottom:0; left:0 */
+    background: rgba(0, 0, 0, 0.35);
+    z-index: 0;
+}
+
+/* Make sure header child elements appear above overlay */
+header > * {
+    position: relative;
+    z-index: 1;
 }
 
 header h1 {

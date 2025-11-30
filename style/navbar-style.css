@@ -18,23 +18,38 @@ nav {
     font-family: 'Google Sans Code';
     font-weight: 700;
     font-size: 12px;
+    gap: 10em;
+    flex-wrap: nowrap;
 }
 
 .logo {
     display: flex;
     justify-content: start;
     margin: 2%;
+    flex: 2;
+}
+
+.menu {
+    flex: 1;
+    margin-right: 5%;
 }
 
 nav ul {
     display: flex;
-    flex-wrap: wrap;
-    flex-grow: 100%;
+    flex-wrap: nowrap;
 }
 
-ul .menu-choice {
-    flex-grow: 20%;
-    padding: 20px;
+.home-btn {
+    flex: 1;
+}
+.about-btn {
+    flex: 1;
+}
+.project-btn {
+    flex: 1;
+}
+.contact-btn {
+    flex: 1;
 }
 
 .menu-choice a {
