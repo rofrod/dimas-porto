@@ -1,12 +1,16 @@
+#about {
+    padding: 2rem;
+}
+
 .about-me {
     display: block;
     text-align: center;
-    margin: 30px;
+    margin: 30px;;
 }
 
 .about-me h2 {
     letter-spacing: 2px;
-    font-size: 2rem;
+    font-size: 2em;
 }
 
 .about-me p {
@@ -15,4 +19,14 @@
 
 .know-me h3{
     font-size: 1.35rem;
+}
+
+.contact-scroll-btn a{
+    font-family: 'roboto', "sansation";
+    font-weight: bold;
+    background-color: violet;
+    color: white;
+    font-size: 0.8rem;
+    padding: 17px 25px;
+    border-radius: 5px;
 }
