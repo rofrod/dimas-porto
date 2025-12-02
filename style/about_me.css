@@ -5,7 +5,7 @@
 .about-me {
     display: block;
     text-align: center;
-    margin: 30px;;
+    padding: 30px;
 }
 
 .about-me h2 {
@@ -21,6 +21,11 @@
     font-size: 1.35rem;
 }
 
+.contact-scroll-btn {
+    display: flex;
+    gap: 5px;
+}
+
 .contact-scroll-btn a{
     font-family: 'roboto', "sansation";
     font-weight: bold;
@@ -29,4 +34,36 @@
     font-size: 0.8rem;
     padding: 17px 25px;
     border-radius: 5px;
+    box-sizing: border-box;
+}
+
+.skills {
+    margin-top: 1.5rem;
+}
+
+.skills-container {
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    column-gap: 10px;
+    row-gap: 10px;
+}
+
+.skills-container div {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(204, 204, 204, 0.63);
+    border-radius: 5px;
+}
+
+.skills-container div p {
+    color: #707070;
+    font-weight: bold;
+    font-size: 0.95rem;
+}
+
+.skills h3 {
+    font-size: 1.7rem;
+    margin-bottom: 1.2rem;
 }
