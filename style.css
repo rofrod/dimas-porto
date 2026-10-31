@@ -1,0 +1,124 @@
+body {
+    margin: 0px;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 20px;
+    margin-right: 20px;
+    gap: 5vh;
+}
+
+.logo {
+    color: brown;
+    text-align: center;
+}
+
+.navbar ul {
+    display: flex;
+    list-style-type: none;
+    background-color: white;
+    padding: 0px;
+    margin: 0px;
+    overflow: hidden;
+}
+
+.navbar ul li a{
+    color: rgb(138, 138, 138);
+}
+
+.navbar a{
+    text-decoration: none;
+    color: aquamarine;
+    padding: 15px;
+    display: flex;
+    text-align: center;
+}
+
+.navbar ul{
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+}
+
+.navbar ul{
+    align-items: center;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0px 10px 10px rgb(131, 130, 130);
+    border-radius: 10px;
+}
+
+.navbar {
+    margin: 12px;
+    border-radius: 30px;
+}
+
+.navbar li a{
+    border-radius: 14px;
+}
+
+.navbar a:hover{
+    color: black;
+    background-color: rgb(131, 130, 130);
+    transition: 0.35s;
+}
+
+.navbar li{
+    float: left;
+}
+
+#home-page {
+    width: auto;
+    height: auto;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-around;
+    text-align: start;
+}
+
+.action-work-btn{
+    display: inline-block;
+    text-decoration: none;
+    color: rgb(0, 58, 0);
+    padding: 16px;
+    border-radius: 15px;
+    box-shadow: 0px 10px 10px rgb(0, 58, 0);
+    background-image: linear-gradient(rgb(0, 75, 37), rgb(0, 75, 37));
+    background-repeat: no-repeat;
+    background-position: left center;
+    background-size: 0% 100%;
+    background-color: rgb(144, 238, 144);
+    transition: box-shadow 0.1s ease-in, background-size 0.3s ease, color 0.5s ease;
+}
+
+.action-work-btn:hover{
+    background-size: 100% 100%;
+    color: rgb(255, 255, 255);
+}
+
+.action-work-btn:active{
+    background-size: 100% 100%;
+    color: rgb(255, 255, 255);
+    box-shadow: 0px 0px 0px white;
+}
+
+#home-page h2{
+    text-align: center;
+    color: rgb(0, 75, 37);
+    font-size: 80px;
+}
+
+#about-page {
+    display: grid;
+    height: 50vh;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+}
+
+.my-foto img  {
+    width: 100%;
+    height: auto;
+}
